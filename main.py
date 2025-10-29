@@ -5,9 +5,9 @@ import sys
 
 def main():
     filename = "./books.xml"
-    book_ct_handl = BookContentHandler()
+    book_ct_handler = BookContentHandler()
     try:
-        sax.parse(filename, book_ct_handl)
+        sax.parse(filename, book_ct_handler)
     except sax.SAXParseException as e:
         print(e)
         sys.exit(1)
